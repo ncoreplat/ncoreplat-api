@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nCorePlat API\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-14 17:22+0000\n"
+"PO-Revision-Date: 2021-01-08 15:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: French (France)\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.6; wp-5.6"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.ncorehr.com/"
+msgstr "https://www.ncorehr.com/"
+
+#. Author of the plugin
+msgid "nCore"
+msgstr "nCore"
+
+#. Description of the plugin
+msgid "nCore Plat API Plugin"
+msgstr "nCore Plat API Plugin"
+
+#. Name of the plugin
+msgid "nCorePlat API"
+msgstr "nCorePlat API"
+
+#: inc/templates_functions.php:209
+msgctxt "ncoreplat-api-form"
+msgid "Continue"
+msgstr "Continuer"
+
+#: inc/templates_functions.php:130
+msgctxt "ncoreplat-api-form"
+msgid "Select"
+msgstr "Sélectionner"
+
+#: inc/templates_functions.php:29
+msgctxt "ncoreplat-api-node"
+msgid "Apply Now"
+msgstr "Postuler maintenant"
+
+#: inc/templates_functions.php:94
+msgctxt "ncoreplat-api-position"
+msgid "Apply Now"
+msgstr "Postulez maintenant"
+
+#: inc/templates_functions.php:98
+msgctxt "ncoreplat-api-position"
+msgid "Fill in the form below and send your application."
+msgstr "Remplissez le formulaire ci-dessous et envoyez votre candidature."
+
+#: inc/shortcode_functions.php:32
+msgctxt "ncoreplat-api-position-modal"
+msgid "Close"
+msgstr "Fermer"
+
+#: inc/settings_functions.php:268
+msgctxt "ncoreplat-api-settings"
+msgid ""
+msgstr ""
+
+#: inc/settings_functions.php:95
+msgctxt "ncoreplat-api-settings"
+msgid "Advanced Setting"
+msgstr ""
+
+#: inc/settings_functions.php:102
+msgctxt "ncoreplat-api-settings"
+msgid "Ajax Content"
+msgstr ""
+
+#: inc/settings_functions.php:251
+msgctxt "ncoreplat-api-settings"
+msgid "API information login"
+msgstr ""
+
+#: inc/settings_functions.php:47
+msgctxt "ncoreplat-api-settings"
+msgid "Base Endpoint"
+msgstr ""
+
+#: inc/settings_functions.php:137
+msgctxt "ncoreplat-api-settings"
+msgid "Black"
+msgstr ""
+
+#: inc/settings_functions.php:177
+msgctxt "ncoreplat-api-settings"
+msgid "Button color"
+msgstr ""
+
+#: inc/settings_functions.php:193
+msgctxt "ncoreplat-api-settings"
+msgid "Button font color"
+msgstr ""
+
+#: inc/settings_functions.php:277
+msgctxt "ncoreplat-api-settings"
+msgid "Elements colors"
+msgstr ""
+
+#: inc/settings_functions.php:118
+msgctxt "ncoreplat-api-settings"
+msgid "Graphic settings"
+msgstr ""
+
+#: inc/settings_functions.php:40
+msgctxt "ncoreplat-api-settings"
+msgid "Login settings"
+msgstr ""
+
+#: inc/settings_functions.php:8
+msgctxt "ncoreplat-api-settings"
+msgid "nCore Plat API"
+msgstr ""
+
+#: inc/settings_functions.php:7
+msgctxt "ncoreplat-api-settings"
+msgid "nCore Plat API Settings"
+msgstr ""
+
+#: inc/settings_functions.php:79
+msgctxt "ncoreplat-api-settings"
+msgid "Password"
+msgstr ""
+
+#: inc/settings_functions.php:125
+msgctxt "ncoreplat-api-settings"
+msgid "Primary color"
+msgstr ""
+
+#: inc/settings_functions.php:145
+msgctxt "ncoreplat-api-settings"
+msgid "Secondary color"
+msgstr ""
+
+#: inc/settings_functions.php:161
+msgctxt "ncoreplat-api-settings"
+msgid "Secondary text color"
+msgstr ""
+
+#: inc/settings_functions.php:302
+msgctxt "ncoreplat-api-settings"
+msgid "Shortcode example"
+msgstr ""
+
+#: inc/settings_functions.php:307
+msgctxt "ncoreplat-api-settings"
+msgid ""
+"To render in your page a specific position, replace also the value "
+"\"id_positon\" with your position ID"
+msgstr ""
+
+#: inc/settings_functions.php:209
+msgctxt "ncoreplat-api-settings"
+msgid "Use Shortcode"
+msgstr ""
+
+#: inc/settings_functions.php:304
+msgctxt "ncoreplat-api-settings"
+msgid ""
+"Use this shortcode on your page and replace the \"id_node\" value with your "
+"node ID"
+msgstr ""
+
+#: inc/settings_functions.php:63
+msgctxt "ncoreplat-api-settings"
+msgid "Username"
+msgstr ""
+
+#: inc/settings_functions.php:138
+msgctxt "ncoreplat-api-settings"
+msgid "White"
+msgstr ""

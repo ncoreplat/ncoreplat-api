@@ -1,0 +1,358 @@
+.ncore-plat-api-container {
+	--first-color:0, 0, 0;
+	--second-color:255, 255, 255;
+	--form-text-color:0, 0, 0;
+	--form-field-color:255, 255, 255;
+	--main-color:167, 139, 107;
+	--main-text-color:255, 255, 255;
+	--btn-color:92, 184, 92;
+	--btn-text-color:255, 255, 255;
+}
+
+.ncore-plat-api-container.ncore-plat-api-color-white {
+	--first-color:255, 255, 255;
+	--second-color:0, 0, 0;
+	--form-text-color:119, 119, 119;
+	--form-field-color:238, 238, 238;
+}
+
+.ncore-plat-api-container,
+.ncore-plat-api-container * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+
+.ncore-plat-api-container .ncore-plat-api-text-color,
+.ncore-plat-api-container .ncore-plat-api-text-color * {
+	color: rgba(var(--second-color), 1);
+}
+
+/* Container for flexboxes */
+.ncore-plat-api-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+/* Create two equal columns */
+.ncore-plat-api-container .ncore-plat-api-position-node,
+.ncore-plat-api-container .ncore-plat-api-position-info,
+.ncore-plat-api-container .ncore-plat-api-position-form {
+	-webkit-flex: 50%;
+    -ms-flex: 50%;
+	flex: 50%;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 767px) {
+	.ncore-plat-api-container {
+		-webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+/*.ncore-plat-api-container {
+	float:left;
+	width: 100%;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-node,
+.ncore-plat-api-container .ncore-plat-api-position-info,
+.ncore-plat-api-container .ncore-plat-api-position-form {
+	float:left;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.ncore-plat-api-container .ncore-plat-api-position-node,
+	.ncore-plat-api-container .ncore-plat-api-position-info,
+	.ncore-plat-api-container .ncore-plat-api-position-form {
+		width: 50%;
+	}
+	.ncore-plat-api-container .ncore-plat-api-position-node:nth-child(odd) {
+		clear:left;
+	}
+}*/
+
+.ncore-plat-api-container .ncore-plat-api-position {
+	background-color: rgba(var(--first-color), 0.8);
+	padding: 10px 25px;
+	margin: 10px 15px;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-last {
+	display: none;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-title {
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: rgba(var(--main-color), 1);
+    color: rgba(var(--main-text-color), 1);
+	margin-bottom: 10px;
+	padding: 12px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-info .ncore-plat-api-position .ncore-plat-api-position-title,
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-position .ncore-plat-api-position-title {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-subtitle {
+    font-size: 18px;
+    line-height: 1.4;
+	text-align: center;
+	color: rgba(var(--second-color), 1);
+	margin: 10px 0;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-description {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.3;
+	margin-bottom: 10px;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-position .ncore-plat-api-position-description {
+	margin-bottom: 25px;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-btn {
+    text-align: right;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-web-url,
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-resource-url,
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-submit {
+	color: rgba(var(--btn-text-color), 1);
+	border-color: rgba(var(--btn-color), 1);
+	background-color: rgba(var(--btn-color), 1);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	display: inline-block;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-web-url,
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-resource-url {
+	padding: 6px 12px;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-submit {
+	padding: 10px 16px;
+	text-transform: none;
+	font-size: 18px;
+	line-height: 1.3333333;
+	width: 100%;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-web-url:hover,
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-submit:hover {
+    opacity: 0.8;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-form-group {
+	margin-bottom: 25px;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-fieldset-radio {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: 0;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-radio,
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-checkbox {
+	display: inline-block;
+	line-height: 1;
+	margin: 0 20px 0 0;
+	font-size: 18px;
+	padding: 0;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-radio input,
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-checkbox input {
+	margin: 0 5px 0 0;
+	padding: 0;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-label {
+	width: 100%;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-field,
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-textarea {
+	font-weight: 400;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border-color: rgba(var(--form-field-color), 0.5);
+	background-color: rgba(var(--form-field-color), 0.9);
+	color: rgba(var(--form-text-color), 1);
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-textarea {
+	resize: vertical;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form ::placeholder {
+	color: rgba(var(--form-text-color), 1);
+	opacity: 1;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form ::-ms-input-placeholder {
+	color: rgba(var(--form-text-color), 1);
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form ::-ms-input-placeholder {
+	color: rgba(var(--form-text-color), 1);
+}
+
+.ncore-plat-api-container .ncore-plat-api-open-modal {
+	font-size: 12px;
+	display:block;
+	text-decoration: underline;
+	margin-bottom:15px;
+	line-height: 1;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-check-policy {
+	display: block;
+	line-height: 1;
+	margin: 0;
+	font-size: 14px;
+	padding: 0;
+}
+
+/* The Modal (background) */
+.ncore-plat-api-modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 99999; /* Sit on top */
+	width: 100vw; /* Full width */
+	height: 100vh; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+	bottom: 50%;
+    right: 50%;
+	transform: translate(50%, 50%);
+}
+
+/* Modal Content */
+.ncore-plat-api-modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #fefefe;
+	width: 70vw;
+	transform: translate(50%, 0);
+	position: absolute;
+	right: 50%;
+	top: 20%;
+	z-index: 999999;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.ncore-plat-api-modal-content .ncore-plat-api-modal-header,
+.ncore-plat-api-modal-content .ncore-plat-api-modal-body,
+.ncore-plat-api-modal-content .ncore-plat-api-modal-footer {
+	padding: 20px;
+}
+
+.ncore-plat-api-modal-content .ncore-plat-api-modal-header,
+.ncore-plat-api-modal-content .ncore-plat-api-modal-body {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.ncore-plat-api-modal-content .ncore-plat-api-modal-footer {
+	text-align:right;
+}
+
+.ncore-plat-api-modal-content .ncore-plat-api-modal-title {
+	font-size: 18px;
+	font-weight: 700;
+	color: #122b40;
+}
+
+.ncore-plat-api-modal-content .ncore-plat-api-modal-body * {
+	color: #122b40;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 1.3;
+}
+
+/* The Close Button */
+.ncore-plat-api-modal-content .ncore-plat-api-close-modal-btn  {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	text-transform: none;
+}
+
+.ncore-plat-api-modal-content .ncore-plat-api-close-modal-btn:hover,
+.ncore-plat-api-modal-content .ncore-plat-api-close-modal-btn:focus {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+	text-decoration: none;
+}
+
+.ncore-plat-api-modal-content .ncore-plat-api-close-modal-times {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 28px;
+	width: 28px;
+	text-align: center;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.ncore-plat-api-modal-content .ncore-plat-api-close-modal-times:hover,
+.ncore-plat-api-modal-content .ncore-plat-api-close-modal-times:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.ncore-plat-api-open-modal-body {
+	height: 100vh !important;
+	overflow:hidden !important;
+}
