@@ -166,7 +166,7 @@ $nCorePlat_shortcode = new ncoreplat_api_shortcode();
 // update
 require_once NCORE_PLAT_API_PLUGIN_DIR . 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://www.ncorehr.com/download/update/ncore-plat-plugin-api.json',
+	'https://github.com/ncoreplat/ncoreplat-api',
 	__FILE__, //Full path to the main plugin file or functions.php.
 	'nCorePlat-api'
 );
