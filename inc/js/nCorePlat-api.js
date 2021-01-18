@@ -35,8 +35,12 @@
 		
 		function checkLocation(history) {
 			let queryString = window.location.search;
-			if (queryString.indexOf('ncore-node') >= 1 && queryString.indexOf('ncore-position') >= 1) {
-				let urlParams = new URLSearchParams(queryString);
+			let urlParams = new URLSearchParams(queryString);
+			if (queryString.indexOf('nCoreUrl') >= 1) {
+				let nCoreUrl = urlParams.get('nCoreUrl');
+				let decondeUrl = atob(nCoreUrl);
+				window.location.replace(decondeUrl);
+			} else if (queryString.indexOf('ncore-node') >= 1 && queryString.indexOf('ncore-position') >= 1) {
 				let id_node = urlParams.get('ncore-node');
 				let id_position = urlParams.get('ncore-position');
 				let action_element = $('#ncorePlatPositionAction_'+id_node+'_'+id_position+'');
