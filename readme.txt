@@ -8,6 +8,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 WordPress Plugin for nCore API
 
+== Description ==
+WordPress Plugin for nCore API
+
 == Changelog ==
 = 0.1.1 =
 Minor code js changes
