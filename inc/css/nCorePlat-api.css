@@ -24,6 +24,11 @@
 	font-family: inherit;
 }
 
+.ncore-plat-api-container {
+	font-size:14px;
+	line-height: 1.5;
+}
+
 .ncore-plat-api-container .ncore-plat-api-text-color,
 .ncore-plat-api-container .ncore-plat-api-text-color * {
 	color: rgba(var(--second-color), 1);
@@ -135,7 +140,10 @@
 
 .ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-web-url,
 .ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-resource-url,
-.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-submit {
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-submit,
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-resource-url:hover,
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-web-url:hover,
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-submit:hover {
 	color: rgba(var(--btn-text-color), 1);
 	border-color: rgba(var(--btn-color), 1);
 	background-color: rgba(var(--btn-color), 1);
@@ -143,11 +151,19 @@
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	display: inline-block;
+	border-width: 1px;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-web-url span,
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-resource-url span {
+	color: rgba(var(--btn-text-color), 1);
+	display: contents;
 }
 
 .ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-web-url,
 .ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-resource-url {
 	padding: 6px 12px;
+	line-height: 22px;
 }
 
 .ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-submit {
@@ -158,6 +174,7 @@
 	width: 100%;
 }
 
+.ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-resource-url:hover,
 .ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-web-url:hover,
 .ncore-plat-api-container .ncore-plat-api-position .ncore-plat-api-position-submit:hover {
     opacity: 0.8;
@@ -187,10 +204,28 @@
 .ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-checkbox input {
 	margin: 0 5px 0 0;
 	padding: 0;
+	height: inherit;
+	width: inherit;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-radio span,
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-checkbox span {
+	vertical-align: middle;
+	display: inline-block;
 }
 
 .ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-label {
 	width: 100%;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-field { 
+	height: 47px;
+}
+
+.ncore-plat-api-container .ncore-plat-api-position-form select.ncore-plat-api-field[multiple="multiple"] { 
+	height: auto;
 }
 
 .ncore-plat-api-container .ncore-plat-api-position-form .ncore-plat-api-field,
@@ -229,7 +264,7 @@
 
 .ncore-plat-api-container .ncore-plat-api-open-modal {
 	font-size: 12px;
-	display:block;
+	display: block;
 	text-decoration: underline;
 	margin-bottom:15px;
 	line-height: 1;
@@ -273,6 +308,7 @@
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
+
 .ncore-plat-api-modal-content .ncore-plat-api-modal-header,
 .ncore-plat-api-modal-content .ncore-plat-api-modal-body,
 .ncore-plat-api-modal-content .ncore-plat-api-modal-footer {

@@ -43,7 +43,9 @@
 						</div>
 						<div class="ncore-plat-api-position-btn">
 							<a ' . $positon_btn_attr . '>
-								' . $positon_btn_text . '
+								<span>
+									' . $positon_btn_text . '
+								</span>
 							</a>
 						</div>
 					</div>
@@ -174,7 +176,9 @@
 										<input type="' . $field_type . '" placeholder="' . $field_name . '" id="' . $field_id . '" name="' . $field_canonical_name . '" '. $html_field_required .' class="ncore-plat-api-field">
 									</label>';
 								}
-								$html_nCorePlat_position_form .= '<div class="ncore-plat-api-position-form-group">' . $html_nCorePlat_position_field . '</div>';
+								if($html_nCorePlat_position_field) {
+									$html_nCorePlat_position_form .= '<div class="ncore-plat-api-position-form-group">' . $html_nCorePlat_position_field . '</div>';
+								}
 							}
 						}
 						$token = wp_create_nonce( 'application_submition' );
@@ -206,7 +210,9 @@
 							</div>';
 						}
 						/* End logica per policy */
-						$html_nCorePlat_position_form .= '<button type="submit" class="ncore-plat-api-position-submit">' . _x( "Continue" , "ncoreplat-api-form" , "ncoreplat-api" ) . '</button>';
+						$html_nCorePlat_position_form .= '<button type="submit" class="ncore-plat-api-position-submit">
+							' . _x( "Continue" , "ncoreplat-api-form" , "ncoreplat-api" ) . 
+						'</button>';
 					$html_nCorePlat_position_form .= '</form>
 				</div>
 				<div class="ncore-plat-api-position-last"></div>

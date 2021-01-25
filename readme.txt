@@ -12,6 +12,9 @@ WordPress Plugin for nCore API
 WordPress Plugin for nCore API
 
 == Changelog ==
+= 0.1.2 =
+Minor code css changes
+
 = 0.1.1 =
 Minor code js changes
 
