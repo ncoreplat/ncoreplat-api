@@ -1,6 +1,6 @@
 === nCorePlat API ===
 Requires at least: 5.6
-Tested up to: 5.6
+Tested up to: 5.9
 Requires PHP: 7.0
 Stable tag: 0.1.3
 License: GPLv2 or later
