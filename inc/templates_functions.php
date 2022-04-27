@@ -144,15 +144,27 @@
 									$checkbox = "";
 									$radio = '<fieldset id="' . $field_id . '" class="ncore-plat-api-fieldset-radio">';
 									foreach($choices as $choice_key => $choice_value){
-										$option .= '<option value="'. htmlentities($choice_value) .'">'. $choice_value .'</option>';
-										$checkbox .= '<label for="' . $field_id . '_' . $choice_key . '" class="ncore-plat-api-checkbox' . $html_checkbox_required_class . '">
-											<input type="checkbox" value="' . htmlentities($choice_value) . '" id="' . $field_id . '_' . $choice_key . '" name="' . $field_canonical_name . '" '. $html_field_required .'>
-											<span class="ncore-plat-api-text-color">' . $choice_value . '</span>
-										</label>';
-										$radio .= '<label for="' . $field_id . '_' . $choice_key . '" class="ncore-plat-api-radio">
-											<input type="radio" value="' . htmlentities($choice_value) . '" id="' . $field_id . '_' . $choice_key . '" name="' . $field_canonical_name . '" '. $html_field_required .'>
-											<span class="ncore-plat-api-text-color">' . $choice_value . '</span>
-										</label>';
+										if (is_object($choices)) {
+											if (is_object($choice_value)) {
+												$option .= '<optgroup label="' . htmlentities($choice_key) . '">';
+												foreach ($choice_value as $sub_choice_value => $sub_choice_key) {
+													$option .= '<option value="' . htmlentities($sub_choice_key) . '">' . $sub_choice_value . '</option>';
+												}
+												$option .= '</optgroup>';
+											} else {
+												$option .= '<option value="' . htmlentities($choice_value) . '">' . $choice_key . '</option>';
+											}
+										} else {
+											$option .= '<option value="' . htmlentities($choice_value) . '">' . $choice_value . '</option>';
+											$checkbox .= '<label for="' . $field_id . '_' . $choice_key . '" class="ncore-plat-api-checkbox' . $html_checkbox_required_class . '">
+												<input type="checkbox" value="' . htmlentities($choice_value) . '" id="' . $field_id . '_' . $choice_key . '" name="' . $field_canonical_name . '" ' . $html_field_required . '>
+											   <span class="ncore-plat-api-text-color">' . $choice_value . '</span>
+											</label>';
+											$radio .= '<label for="' . $field_id . '_' . $choice_key . '" class="ncore-plat-api-radio">
+											   <input type="radio" value="' . htmlentities($choice_value) . '" id="' . $field_id . '_' . $choice_key . '" name="' . $field_canonical_name . '" ' . $html_field_required . '>
+											   <span class="ncore-plat-api-text-color">' . $choice_value . '</span>
+											</label>';
+										}
 									}
 									$radio .= '</fieldset>';
 									if ($field_expanded && $field_multiple) {
