@@ -2,7 +2,7 @@
     /*
     Plugin Name: nCorePlat API
     Description: nCore Plat API Plugin
-    Version: 0.1.2
+    Version: 0.1.3
 	Plugin URI: https://www.ncorehr.com/
     Author: nCore
     Author URI: https://www.ncorehr.com/
@@ -15,7 +15,7 @@
 defined( 'ABSPATH' ) or exit;
 
 // the core plugin
-	define( 'NCORE_PLAT_API_VERSION', '0.1.2' );
+	define( 'NCORE_PLAT_API_VERSION', '0.1.3' );
 	define( 'NCORE_PLAT_API_PLUGIN_DIR', __DIR__ . '/' );
 	define( 'NCORE_PLAT_API_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
 	define( 'NCORE_PLAT_API_PLUGIN_FILE', __FILE__ );
