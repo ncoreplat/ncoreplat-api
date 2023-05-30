@@ -2,7 +2,7 @@
     /*
     Plugin Name: nCorePlat API
     Description: nCore Plat API Plugin
-    Version: 0.1.3
+    Version: 0.1.4
 	Plugin URI: https://www.ncorehr.com/
     Author: nCore
     Author URI: https://www.ncorehr.com/
@@ -42,12 +42,13 @@ class ncoreplat_api_asset {
 		// search through each post
 		foreach ($posts as $post) {
 			// check the post content for the short code
-			if ( stripos($post->post_content, 'ncoreplat-api') )
+			if ( stripos($post->post_content, 'ncoreplat-api') !== false ) {
 				// we have found a post with the short code
 				$found = true;
 				// stop the search
 				break;
 			}
+		}
 		// caricare eventuali script o css del plugin
 		if ($found){
 			wp_enqueue_style( 'nCorePlatApiStyle', NCORE_PLAT_API_PLUGIN_URL . "inc/css/nCorePlat-api.css", array(), NCORE_PLAT_API_VERSION);
