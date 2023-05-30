@@ -2,7 +2,7 @@
     /*
     Plugin Name: nCorePlat API
     Description: nCore Plat API Plugin
-    Version: 0.1.4
+    Version: 0.1.5
 	Plugin URI: https://www.ncorehr.com/
     Author: nCore
     Author URI: https://www.ncorehr.com/

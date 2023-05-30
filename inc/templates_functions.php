@@ -209,7 +209,7 @@
 								</label>
 							</div>';
 						}
-						if(property_exists($privacy,'title')){
+						if($privacy instanceof stdClass && property_exists($privacy,'title')){
 							$html_nCorePlat_position_form .= '<div class="ncore-plat-api-position-form-group">
 								<a class="ncore-plat-api-open-modal ncore-plat-api-text-color" href="javascript:void(0);"
 									data-modaltitle="' . $privacy->title . '" data-modaltext="' . $privacy->text . '">
